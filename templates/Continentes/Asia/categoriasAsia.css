@@ -1,0 +1,69 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff5e1; /* Fondo crema */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que ocupa toda la altura de la ventana */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Ajuste para centrar la cuadrícula con 4 botones */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas fijas */
+    gap: 25px;
+    justify-content: center; /* Centra los botones en el contenedor */
+    align-items: center; /* Asegura alineación vertical */
+}
+
+/* Estilos para los botones con iconos */
+.btn-icon {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    color: #d32f2f; /* Rojo vibrante */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-icon i {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #ffd700; /* Dorado */
+}
+
+.btn-icon:hover {
+    background-color: #4caf50; /* Verde jade */
+    color: white; /* Texto en blanco para contraste */
+}
+
+.btn-icon span {
+    margin-top: 10px;
+    color: #4caf50; /* Verde jade */
+}
+
+/* Ajustes adicionales para el diseño */
+.btn-icon:active {
+    transform: scale(0.95); /* Pequeña reducción al presionar */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}

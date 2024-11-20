@@ -1,0 +1,52 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container { 
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #00796b;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la cuadrícula de países */
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos para las tarjetas de cada país */
+.country-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.country-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.country-card h2 {
+    font-size: 1.5em;
+    color: #00796b;
+    margin: 0;
+}
